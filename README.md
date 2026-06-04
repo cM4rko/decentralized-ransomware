@@ -1,11 +1,13 @@
 > ### ⚠️ LEGAL DISCLAIMER
-> This project presents an architecture that combines a Python script with an Ethereum
-> Smart Contract acting as a decentralized BcC2 (Blockchain-based Command and Control). 
-> This code has been developed exclusively for EDUCATIONAL and RESEARCH purposes in the 
+> + This project presents an architecture that combines a Python script with an Ethereum
+> Smart Contract acting as a decentralized BcC2 (Blockchain-based Command and Control).
+>
+> - This code has been developed exclusively for EDUCATIONAL and RESEARCH purposes in the 
 > field of cybersecurity. By leveraging the inherent censorship-resistance of public 
 > blockchains, this model demonstrates a provisioning channel that is completely resilient 
-> against infrastructure takedowns, censorship, or centralized shutdowns. Using this 
-> software for illicit activities is strictly illegal and prohibited. The author is not 
+> against infrastructure takedowns, censorship, or centralized shutdowns.
+>
+> - Using this software for illicit activities is strictly illegal and prohibited. The author is not 
 > responsible for any misuse of this material.
 
 ---
