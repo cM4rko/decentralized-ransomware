@@ -12,7 +12,7 @@
 
 ## 🎓 Overview ##
 
-<img src="" >
+<img src="https://github.com/cM4rko/decentralized-ransomware/blob/main/assets/images/image.png" >
 
 ---
 
