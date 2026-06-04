@@ -53,7 +53,7 @@
 
 **Change Public RSA**
 ```bash
-cast send $CONTRACT_ADDRESS "changeKey(bytes)" $HEX_RSA --rpc-url $NODE --private-key $KEY
+cast send $CONTRACT_ADDRESS "changeKey(bytes)" $HEX_RSA --rpc-url $NODE --private-key $PRIVATE_KEY
 ```
 
 **Change Image URL**
