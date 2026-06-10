@@ -12,7 +12,7 @@ contract DeployServer is Script {
         
         address myAddress = vm.addr(deployerPrivateKey);
         bytes memory fullPayload = vm.envBytes("RSA_PUBLIC_HEX");
-        string memory urlIPFS = "";
+        string memory urlIPFS = vm.envString("URL");
 
         vm.startBroadcast(deployerPrivateKey);
 
